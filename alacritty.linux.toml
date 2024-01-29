@@ -1,6 +1,6 @@
 
 import = [
-    "alacritty.base.toml",
+    "~/.config/alacritty/alacritty.base.toml",
 ]
 
 [font.bold]
