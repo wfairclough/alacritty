@@ -1,0 +1,11 @@
+[bell]
+duration = 50
+color = "#1E1E2E"
+
+[font]
+size = 14
+
+[window.dimensions]
+columns = 120
+lines = 60
+
