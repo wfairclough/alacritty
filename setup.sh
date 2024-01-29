@@ -2,6 +2,8 @@
 # Check if Alacritty is installed and select the correct config file based on platform
 #
 
+CONFIG_FILE="$HOME/.config/alacritty/alacritty.toml"
+
 print_install_instructions_and_exit() {
   echo "Alacritty is not installed. Please install it from: https://alacritty.org/"
   exit 1
@@ -13,7 +15,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     print_install_instructions_and_exit
   fi 
   echo "macOS detected. Using macOS config file."
-unlink "$HOME/.config/alacritty/alacritty.toml"
+  unlink "$CONFIG_FILE" || true
   ln -sf "$PWD/alacritty.macos.toml" "$HOME/.config/alacritty/alacritty.toml"
   exit 0
 fi
@@ -24,7 +26,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
     print_install_instructions_and_exit
   fi 
   echo "Linux detected. Using Linux config file."
-unlink "$HOME/.config/alacritty/alacritty.toml"
+  unlink "$CONFIG_FILE" || true
   ln -sf "$PWD/alacritty.linux.toml" "$HOME/.config/alacritty/alacritty.toml"
   exit 0
 fi

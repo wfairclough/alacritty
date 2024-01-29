@@ -3,7 +3,7 @@ duration = 50
 color = "#1E1E2E"
 
 [font]
-size = 14
+size = 16
 
 [window.dimensions]
 columns = 120
