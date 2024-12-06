@@ -4,15 +4,15 @@ import = [
 ]
 
 [font.bold]
-family = "JetBrainsMono Nerd Font Mono"
+family = "MesloLGS NF"
 style = "Bold"
 
 [font.italic]
-family = "JetBrainsMono Nerd Font Mono"
+family = "MesloLGS NF"
 style = "Italic"
 
 [font.normal]
-family = "JetBrainsMono Nerd Font Mono"
+family = "MesloLGS NF"
 style = "Regular"
 
 [window]
